@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow | Student Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>TaskFlow ✨</h1>
+            <p>Organize your day, one task at a time.</p>
+        </header>
+
+        <section class="task-card">
+            <h2>My Tasks</h2>
+
+            <form id="task-form">
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="What do you need to do?"
+                    maxlength="150"
+                    required
+                >
+
+                <button type="submit">Add Task +</button>
+            </form>
+
+            <div class="task-summary">
+                <span>Total: <strong id="total-count">0</strong></span>
+                <span>Completed: <strong id="completed-count">0</strong></span>
+            </div>
+
+            <ul id="task-list"></ul>
+
+            <p id="empty-message">No tasks yet. Add your first task! 🎯</p>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ by a student developer SARMATHA </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
